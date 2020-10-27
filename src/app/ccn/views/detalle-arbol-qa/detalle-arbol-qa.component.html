@@ -1,0 +1,64 @@
+<div class="panel-header bg-primary-gradient">
+    <div class="page-inner py-5">
+        <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+            <div>
+                <h2 class="text-white pb-2 fw-bold">Arbol QA</h2>
+                <h5 class="text-white op-7 mb-2">Arbol de Quejas Administrativas</h5>
+            </div>
+            <div class="ml-md-auto py-2 py-md-0">
+                <!-- <a class="btn btn-link">Agregar Item</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-inner mt--5">
+    <div class="row mt--2">
+        <div class="col-md-12">
+            <div class="card full-height">
+                <div class="card-body">
+                    <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
+                        <div class="col-md-12 text-center">
+                            <h5 class="card-title mb-3">Listado Arbol QA</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-bordered-bd-warning mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Sucursal</th>
+                                            <th scope="col">Zona</th>
+                                            <th scope="col">Detalles</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let arbol of arbolService.list">
+                                            <td>{{ arbol.sucursal }}</td>
+                                            <td>{{ arbol.zona }}</td>
+                                            <td>
+                                                <a   href="#"
+                                                data-toggle="tooltip" 
+                                                data-placement="top" 
+                                                title="Editar" 
+                                                data-toggle="modal" 
+                                                data-target="#ArbolQA"
+                                                (click)="editar(arbol)">
+                                            <i class='far fa-eye' style='color:blue'></i>
+                                        </a>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+

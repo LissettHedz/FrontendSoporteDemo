@@ -1,0 +1,122 @@
+<h5 class="card-title mb-3">Actualizar QA</h5>
+<form [formGroup] = "form" (ngSubmit)="editar()">
+	<div class="form-row">
+	<div class="col-md-6 mb-3">
+		<label for="sucursal">Sucursal</label>
+		<select formControlName="sucursal" class="form-control form-control-sm" required>
+			<option selected disabled value="">Elegir...</option>
+			<option value="012 - Tepic">Tepic</option>
+			<option value="015 - Xalisco">Xalisco</option>
+			<option value="010 - Mazatlan">Mazatlan</option>
+			<option value="041 - Guadalajara">Guadalajara</option>
+			<option value="001 - Hermosillo">Hermosillo</option>
+		</select>
+	  </div>
+	  <div class="col-md-6 mb-3">
+		<label for="zona">Zona</label>
+		<select formControlName="zona" class="form-control form-control-sm" required>
+			<option selected disabled value="">Elegir...</option>
+			<option value="Pacifico">Pacifico</option>
+			<option value="Norte">Norte</option>
+		</select>
+	  </div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-6 mb-3">
+		  <label for="pagoNoRegistrado">Pago no registrado</label>
+		  <input formControlName="pagoNoRegistrado" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="domicilioConAdeudo">Domicilio con adeudo</label>
+		  <input formControlName="domicilioConAdeudo" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="cargosImprocedentes">Cargos improcedentes a TC</label>
+		  <input formControlName="cargosImprocedentes" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="folioNoIngresado">Folio no ingresado</label>
+		  <input formControlName="folioNoIngresado" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="aclaracionVenta">Aclaración de venta</label>
+		  <input formControlName="aclaracionVenta" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="contratoDuplicado">Contrato duplicado</label>
+		  <input formControlName="contratoDuplicado" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="imposibilidadTecnica">Imposibilidad tecnica</label>
+		  <input formControlName="imposibilidadTecnica" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="danosPropiedad">Daños a propiedad</label>
+		  <input formControlName="danosPropiedad" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="quejaRepetitival">Quejas repetitivas</label>
+		  <input formControlName="quejaRepetitival" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="mantenimientoPendiente">Mantenimiento pendiente</label>
+		  <input formControlName="mantenimientoPendiente" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="equipoNoRegistrado">Equipo no registrado</label>
+		  <input formControlName="equipoNoRegistrado" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="trabajoPro">Trabajo en PRO</label>
+		  <input formControlName="trabajoPro" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="cambioCiudad">Cambios de ciudad</label>
+		  <input formControlName="cambioCiudad" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="validarTrabajoAtendido">Validar trabajo atendido</label>
+		  <input formControlName="validarTrabajoAtendido" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="auditoria">Auditoria/ Todos los subtipos</label>
+		  <input formControlName="auditoria" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="malServicoCis">mal servicio CIS</label>
+		  <input formControlName="malServicoCis" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="malServicioCambaceo">Mal servicio cambaceo</label>
+		  <input formControlName="malServicioCambaceo" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="malServicioTecnico">Mal servicio tecnico</label>
+		  <input formControlName="malServicioTecnico" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="aplicarPagosEquivocados">Aplicar pagos equivocados</label>
+		  <input formControlName="aplicarPagosEquivocados" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="quejaPorRetMegared">Atender queja por ret de megared</label>
+		  <input formControlName="quejaPorRetMegared" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="quejaPorRetCable">Atender queja por ret de cable</label>
+		  <input formControlName="quejaPorRetCable" type="text" class="form-control form-control-sm" required>
+		</div>
+		<div class="col-md-6 mb-3">
+		  <label for="portabilidadMal">Portabilidad mal realizada</label>
+		  <input formControlName="portabilidadMal" type="text" class="form-control form-control-sm" required>
+		</div>
+	
+	  </div>
+	  <button class="btn btn-success btn-block btn-sm" type="submit">
+		<i class="fa fa-database"></i>  Actualizar
+	</button>
+</form>
+
+
+
+
