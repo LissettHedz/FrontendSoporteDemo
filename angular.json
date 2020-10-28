@@ -31,7 +31,8 @@
               "src/styles.scss",
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/atlantis.min.css",
-              "src/assets/css/demo.css"
+              "src/assets/css/demo.css",
+              "node_modules/sweetalert2/dist/sweetalert2.css"
 
 
             ],
@@ -49,7 +50,8 @@
               "src/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js",
               "src/assets/js/plugin/sweetalert/sweetalert.min.js",
               "src/assets/js/atlantis.min.js",
-              "src/assets/js/setting-demo.js"
+              "src/assets/js/setting-demo.js",
+              "node_modules/sweetalert2/dist/sweetalert2.min.js"
 
             ]
           },
