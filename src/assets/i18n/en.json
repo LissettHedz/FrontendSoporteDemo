@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "notices": "Notices"
+    },
+    "buttons": {
+        "save": "Save",
+        "update": "Update"
+    }
+}

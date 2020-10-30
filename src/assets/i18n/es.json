@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "notices": "Avisos"
+    },
+    "buttons": {
+        "save": "Guardar",
+        "update": "Actualizar"
+    }
+}

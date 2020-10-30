@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {CommonModule} from '@angular/common';
-import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
 
 
 
@@ -30,7 +32,13 @@ import { MenuComponent } from './ccn/soportes/menu/menu.component';
 import { AvisosComponent } from './pages/avisos/avisos.component';
 import { SuscriptorComponent } from './shared/suscriptor/suscriptor.component';
 import { SucursalComponent } from './shared/sucursal/sucursal.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
+
+// tslint:disable-next-line: typedef
+export function HttpLoaderFactory(http: HttpClient){
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 
 @NgModule({
@@ -60,7 +68,14 @@ import { SucursalComponent } from './shared/sucursal/sucursal.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
