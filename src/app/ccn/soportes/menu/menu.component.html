@@ -2,8 +2,8 @@
     <div class="page-inner py-5">
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
             <div>
-                <h2 class="text-white pb-2 fw-bold">Soporte</h2>
-                <h5 class="text-white op-7 mb-2">Sistema Soporte CCN</h5>
+                <h2 class="text-white pb-2 fw-bold">{{ "labels.support" | translate }}</h2>
+                <h5 class="text-white op-7 mb-2">{{ "labels.title" | translate }}</h5>
             </div>
             <div class="ml-md-auto py-2 py-md-0">
                 <!-- <a class="btn btn-link">Agregar Item</a> -->
@@ -17,10 +17,36 @@
             <div class="card full-height">
                 <div class="card-body">
                     <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
-                        <div class="col-md-6 text-center">
+                        <div class="col-md-12 text-center" *ngFor="let data of Datas">
 
-                        </div>
-                        <div class="col-md-6 text-center">
+                            <div [ngSwitch]="principal" >
+                                <div *ngSwitchDefault id="inicio">
+                                    <img src="{{ data.Imagenprincipal }}" />
+                                        <h5 class="display-4">{{ "labels.title2" | translate }}</h5>
+                                        <p class="lead">{{ "messages.option1" | translate}}</p>
+                                        <hr class="my-4">
+                                        <button class="btn btn-primary mt-2 btn-1"
+                                                (click)="principal = 1">
+                                                {{ "buttons.oneservices" | translate }}
+                                        </button>
+                                        <button class="btn btn-primary mt-2 btn-2"
+                                                (click)="principal = 1">
+                                                {{ "buttons.twoservices" | translate }}
+                                        </button>
+                                        <button class="btn btn-primary mt-2 btn-3"
+                                                (click)="principal = 1">
+                                                {{ "buttons.threeservices" | translate }}
+                                        </button>
+
+
+                                        
+                                </div>
+                                <div *ngSwitchCase="1" id="UnServicio">
+                                    <p>Funciona</p>
+                                </div>
+                            </div>
+
+
 
                         </div>
                           

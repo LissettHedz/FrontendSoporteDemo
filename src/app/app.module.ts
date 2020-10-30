@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // LAYOUT
@@ -33,6 +34,11 @@ import { AvisosComponent } from './pages/avisos/avisos.component';
 import { SuscriptorComponent } from './shared/suscriptor/suscriptor.component';
 import { SucursalComponent } from './shared/sucursal/sucursal.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { MenuSoportesComponent } from './ccn/soportes/menu/menu-soportes/menu-soportes.component';
+import { TelevisionComponent } from './ccn/soportes/television/television.component';
+import { DosServiciosComponent } from './ccn/soportes/menu/dos-servicios/dos-servicios.component';
+import { MenuTelevisionComponent } from './ccn/soportes/menu/menu-television/menu-television.component';
+
 
 
 // tslint:disable-next-line: typedef
@@ -58,7 +64,12 @@ export function HttpLoaderFactory(http: HttpClient){
     MenuComponent,
     AvisosComponent,
     SuscriptorComponent,
-    SucursalComponent
+    SucursalComponent,
+    MenuSoportesComponent,
+    TelevisionComponent,
+    DosServiciosComponent,
+    MenuTelevisionComponent,
+
 
   ],
   imports: [
