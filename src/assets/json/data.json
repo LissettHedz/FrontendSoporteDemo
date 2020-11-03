@@ -1,6 +1,8 @@
 [
     {
-        "Imagenprincipal": "../assets/imagenes/otros/soporte1.png"
+        "Imagenprincipal": "../assets/imagenes/otros/soporte1.png",
+        "Imagen01": "../assets/imagenes/otros/contratar-megacable.png",
+        "Imagen02": "../assets/imagenes/otros/control-megacable.png"
       
     }
 

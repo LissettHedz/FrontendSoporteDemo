@@ -17,11 +17,12 @@
             <div class="card full-height">
                 <div class="card-body">
                     <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
-                        <div class="col-md-12 text-center" *ngFor="let data of Datas">
+                        <div class="col-md-12" *ngFor="let data of Datas">
 
                             <div [ngSwitch]="principal" >
-                                <div *ngSwitchDefault id="inicio">
-                                    <img src="{{ data.Imagenprincipal }}" />
+
+                                <div *ngSwitchDefault id="inicio" class="text-center">
+                                    <img class="" src="{{ data.Imagenprincipal }}" />
                                         <h5 class="display-4">{{ "labels.title2" | translate }}</h5>
                                         <p class="lead">{{ "messages.option1" | translate}}</p>
                                         <hr class="my-4">
@@ -37,19 +38,26 @@
                                                 (click)="principal = 1">
                                                 {{ "buttons.threeservices" | translate }}
                                         </button>
-
-
-                                        
+                                        <button class="btn btn-primary mt-2 btn-3"
+                                                (click)="principal = 1">
+                                                {{ "buttons.others" | translate }}
+                                        </button>      
                                 </div>
+
                                 <div *ngSwitchCase="1" id="UnServicio">
-                                    <p>Funciona</p>
+                                    <app-menu-soportes></app-menu-soportes>
+                                    <button type="button" class="btn btn-icon btn-round btn-primary"
+                                            (click)="principal = Default">
+                                        <i class="fas fa-angle-left"></i>
+                                    </button>
                                 </div>
-                            </div>
 
+                                <div *ngSwitchCase="2" id="Television">
+                                </div>
 
+                            </div><!--Cierre switch-->
 
-                        </div>
-                          
+                        </div>                    
                         </div>
                     </div>
                 </div>

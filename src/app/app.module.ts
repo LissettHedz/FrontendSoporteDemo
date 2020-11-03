@@ -6,14 +6,12 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
-
-
-
-
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+
+
 // LAYOUT
+import { AppComponent } from './app.component';
 import { MainContainerComponent } from './layout/main-container/main-container.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -29,11 +27,12 @@ import { ArbolQaFormComponent } from './pages/arbol-qa/arbol-qa-form/arbol-qa-fo
 // VIEWS AGENTES
 import { DetalleArbolQaComponent } from './ccn/views/detalle-arbol-qa/detalle-arbol-qa.component';
 import { InicioComponent } from './ccn/views/inicio/inicio.component';
-import { MenuComponent } from './ccn/soportes/menu/menu.component';
 import { AvisosComponent } from './pages/avisos/avisos.component';
 import { SuscriptorComponent } from './shared/suscriptor/suscriptor.component';
 import { SucursalComponent } from './shared/sucursal/sucursal.component';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+
+// SOPORTE
+import { MenuComponent } from './ccn/soportes/menu/menu.component';
 import { MenuSoportesComponent } from './ccn/soportes/menu/menu-soportes/menu-soportes.component';
 import { TelevisionComponent } from './ccn/soportes/television/television.component';
 import { DosServiciosComponent } from './ccn/soportes/menu/dos-servicios/dos-servicios.component';

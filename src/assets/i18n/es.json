@@ -1,7 +1,7 @@
 {
     "labels": {
         "title": "Sistema Soporte CCN",
-        "title2": "Soporte de Call Center Nacional",
+        "title2": "Soporte Call Center Nacional",
         "support": "Soporte",
         "notices": "Avisos"
     },
@@ -10,7 +10,8 @@
         "update": "Actualizar",
         "oneservices": "Un Servicio",
         "twoservices": "Dos Servicios",
-        "threeservices":"Tres Servicios"
+        "threeservices":"Tres Servicios",
+        "others":"Otros motivos"
     },
     "messages":{
         "option1":"Selecciona en cuántos servicios esta presentando problemas el cliente"
